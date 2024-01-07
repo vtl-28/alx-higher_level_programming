@@ -1,9 +1,5 @@
 #!/usr/bin/python3
 
-# convert string to list
-# get length of list
-# join
-
 def multiple_returns(sentence):
     items = list(sentence)
     length = len(items)
