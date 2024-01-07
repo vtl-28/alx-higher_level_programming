@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 
 def multiple_returns(sentence):
-    items = list(sentence)
-    length = len(items)
+    length = len(sentence)
 
-    if sentence == " ":
-        fail = (0, None)
+    if length == 0:
+        fail = (length, None)
         return (fail)
     else:
-        success = (length, items[0])
-        return (success)
+        success = (length, sentence[0])
+
+    return (success)
