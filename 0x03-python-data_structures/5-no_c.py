@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 
 def no_c(my_string):
-    converted_str = list(my_string)
-    length_of_list = len(converted_str)
+    converted_str = my_string[:]
+    length_of_list = len(my_string)
 
-    if my_string == " ":
-        pass
+    v = 0
 
     for i in range(length_of_list):
-        if converted_str[i] == 'c' or converted_str[i] == 'C':
-            converted_str[i] = ""
+        if (my_string[i] == 'c' or my_string[i] == 'C'):
+            converted_str = new_string[:(i - v)] + my_string[(i + 1):]
+            v += 1
 
-    return ("".join(converted_str))
+    return (converted_str)
