@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <python3.8/Python.h>
-
+#include <python3.8/object.h>
+#include <python3.8/listobject.h>
 /**
  * print_python_list_info - prints python list info
  *
